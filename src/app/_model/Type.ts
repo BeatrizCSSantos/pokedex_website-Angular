@@ -1,4 +1,5 @@
 export enum Type {
   Water = 'Water',
-  Flying = 'Flying'
+  Flying = 'Flying',
+  Fire = 'Fire',
 }

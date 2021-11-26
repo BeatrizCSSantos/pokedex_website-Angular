@@ -1,15 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { getPokemonImage, getPokemonNumber, Pokemon } from '../_model/Pokemon';
 
 @Component({
   selector: 'app-pokemon-card',
   templateUrl: './pokemon-card.component.html',
   styleUrls: ['./pokemon-card.component.sass']
 })
-export class PokemonCardComponent implements OnInit {
+export class PokemonCardComponent {
+  @Input()
+  public pokemon!: Pokemon;
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  getPokemonImage = getPokemonImage;
+  getPokemonNumber = getPokemonNumber;
 }
